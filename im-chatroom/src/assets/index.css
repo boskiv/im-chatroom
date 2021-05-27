@@ -1,0 +1,85 @@
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #409eff;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Consolas, Courier,  monospace;
+}
+
+#app {
+  position: relative;
+  width: 60%;
+  min-height: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#chatroom-header .nav {
+  text-align: center;
+}
+#chatroom-header .logo img {
+  width: 60px;
+}
+#chatroom-header .title {
+  color: #409eff !important;
+  font-size: 24px;
+  font-weight: 700;
+}
+#chatroom-header .title img {
+  display: none;
+}
+
+#chatroom-main {
+  margin-top: 40px;
+}
+#chatroom-main .email, #chatroom-main .nick {
+  width: 50%;
+}
+#chatroom-main .join {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+}
+
+#chatroom-footer {
+  position: absolute;
+  color: #52616a;
+  font-size: 14px;
+  width: 100%;
+  bottom: 12px;
+  text-align: center;  
+}
+#chatroom-footer a {
+  color: #409eff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  #app {
+    width: 100%;
+  }
+
+  #chatroom-header .nav {
+    border-right: none;
+  }
+  #chatroom-header .logo {
+    display: none;
+  }
+  #chatroom-header .title {
+    padding-left: 0 !important;
+    border-bottom: 2px dashed #409eff;
+  }
+  #chatroom-header .title img {
+    display: inline;
+    width: 60px;
+  }
+}

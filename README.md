@@ -1,2 +1,3 @@
-# im-chatroom
+# IM Chatroom
+
 A simple IM Chatroom.
