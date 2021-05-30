@@ -9,7 +9,7 @@ func main() {
 	e := echo.New()
 	e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
-	e.Static("/", "./im-chatroom/dist")
+	e.Static("/", "./public/dist")
 	e.GET("/ws", handleConn)
 	go forwardBroadcast()
 	e.Logger.Fatal(e.Start(":" + port))
