@@ -17,8 +17,7 @@ var (
 func handleJoin(cli *websocket.Conn, join message) error {
 	mutex.Lock()
 	defer mutex.Unlock()
-	online := online{}
-	online.Users = make([]user, 0)
+	online := *newOnline()
 	for _, usr := range users {
 		online.Users = append(online.Users, usr)
 	}

@@ -1,9 +1,5 @@
 package main
 
-type online struct {
-	Users []user `json:"users"`
-}
-
 const (
 	statusJoin  = 1
 	statusLeave = -1
